@@ -8,7 +8,7 @@ API to suggest a menu for dinner
 2. Execute the command
 
 ```
-$ go run main.go
+$ go run server.go
 ```
 
 ## Running the tests
@@ -21,8 +21,9 @@ undecided
 
 ## Built With
 
-[Golang](https://golang.org/) - The language used
-[Gin](https://github.com/gin-gonic/gin) - The web framework used
+* [Golang](https://golang.org/) - The language used
+* [Gin](https://github.com/gin-gonic/gin) - The web framework used
+* [gqlgen](https://gqlgen.com/) - The graphql library used
 
 ## Versioning
 
