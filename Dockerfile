@@ -8,6 +8,9 @@ WORKDIR /go/src/api/
 RUN curl -fLo /go/bin/air https://git.io/linux_air \
   && chmod +x /go/bin/air
 
+# Gin インストール
+RUN go get github.com/gin-gonic/gin
+
 EXPOSE 3001
 
 # コンテナ実行時のデフォルトを設定
