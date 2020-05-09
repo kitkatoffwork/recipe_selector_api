@@ -10,11 +10,11 @@ import (
 	"fmt"
 )
 
-func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
+func (r *mutationResolver) CreateMenu(ctx context.Context, input model.NewMenu) (*model.Menu, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
-func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
+func (r *queryResolver) Menus(ctx context.Context) ([]*model.Menu, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
