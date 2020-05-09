@@ -38,6 +38,7 @@ undecided
 * [Golang](https://golang.org/) - The language used
 * [Gin](https://github.com/gin-gonic/gin) - The web framework used
 * [gqlgen](https://gqlgen.com/) - The graphql library used
+* [Gorm](https://gorm.io/ja_JP/docs/index.html) - The ORM used
 
 ## Versioning
 

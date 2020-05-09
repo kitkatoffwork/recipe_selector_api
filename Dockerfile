@@ -10,6 +10,7 @@ RUN curl -fLo /go/bin/air https://git.io/linux_air \
 
 # Gin インストール
 RUN go get github.com/gin-gonic/gin
+RUN go get github.com/jinzhu/gorm
 
 EXPOSE 8080
 
