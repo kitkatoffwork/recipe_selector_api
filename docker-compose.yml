@@ -7,6 +7,22 @@ services:
     volumes:
       - .:/go/src/api/
     ports:
-      - 3001:3001
+      - 8080:8080
+    environment:
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
     tty:
       true
+    depends_on:
+      - db
+    command: go run server.go
+  db:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - /data/db:/var/lib/postgresql/data/

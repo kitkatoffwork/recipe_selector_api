@@ -11,7 +11,7 @@ RUN curl -fLo /go/bin/air https://git.io/linux_air \
 # Gin インストール
 RUN go get github.com/gin-gonic/gin
 
-EXPOSE 3001
+EXPOSE 8080
 
 # コンテナ実行時のデフォルトを設定
 # ライブリロードを実行
